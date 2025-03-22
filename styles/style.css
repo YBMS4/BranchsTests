@@ -51,12 +51,44 @@ html{
 
 .markedDownContainer pre{
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr max-content !important;
+    grid-auto-rows: max-content;
+    align-items: center;
+    height: fit-content !important;
     padding: 15px 0px;
-    background-color: rgb(0, 35, 83);
+    background-color: rgb(0, 35, 83) !important;
     font-family: consolas !important;
     margin-inline: 40px;
     /* border: thin inset white; */
+}
+
+.markedDownContainer pre code{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.markedDownContainer pre .copyBtn{
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.markedDownContainer pre .copyBtn svg{
+    width: 2rem !important;
+    height: unset !important;
+    aspect-ratio: 1 !important;
+    fill: white;
+    transition: all 0.2s linear;
+}
+
+.markedDownContainer pre .copyBtn:hover svg{
+    fill: cyan;
+}
+
+.markedDownContainer pre .copyBtn:active{
+    opacity: 0.5;
 }
 
 /* ------ Le Footer ------*/
