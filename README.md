@@ -13,3 +13,7 @@ Je vais utiliser ce repository pour tester les branches et leur fonctionnement s
  ```sh
     git remote add origin <Lien du repos distant>
  ``` 
+
+## Version Control
+- **Package Version:** <span style="color: yellow; font-weight: bold;">V1.0</span>
+- **Merge status:** *No merge*
