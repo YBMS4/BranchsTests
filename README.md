@@ -15,5 +15,5 @@ Je vais utiliser ce repository pour tester les branches et leur fonctionnement s
  ``` 
 
 ## Version Control
-- **Package Version:** <span style="color: yellow; font-weight: bold;">V1.0</span>
-- **Merge status:** *No merge*
+- **Package Version:** <span style="color: yellow; font-weight: bold;">V1.1</span>
+- **Merge status:** <span style="color: yellow; font-weight: bold;">Merged with "variant/branche-avec-icon"</span>
