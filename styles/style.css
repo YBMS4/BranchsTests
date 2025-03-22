@@ -1,0 +1,115 @@
+*:not(.markedDownContainer):not(.markedDownContainer *) {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+#header{
+    display: grid;
+    width: inherit;
+    height: fit-content;
+    /* border: thick solid red; */
+    background-color: rgb(0, 84, 179);
+    color: white;
+}
+
+#header h1{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+    border-bottom: thin solid black;
+    box-shadow: 10px 0px 10px rgb(60, 60, 60);
+}
+
+
+/* ------ Le Main ------ */
+#main{
+    width: inherit;
+    height: fit-content;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    grid-auto-columns: 1fr;
+    background-color: rgb(0, 2, 40);
+    color: white;
+}
+
+.markedDownContainer{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.markedDownContainer pre{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    padding: 15px 0px;
+    background-color: rgb(0, 35, 83);
+    font-family: consolas !important;
+    margin-inline: 40px;
+    /* border: thin inset white; */
+}
+
+/* ------ Le Footer ------*/
+
+#footer{
+    width: inherit;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    row-gap: 2vh;
+    color: white;
+}
+
+#footer > #informations{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    row-gap: 2vh;
+}
+
+#footer > #informations button{
+    all: unset;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    text-decoration: underline solid transparent;
+    text-underline-offset: 2px;
+    width: fit-content;
+    height: fit-content;
+    /* padding: 2vh 2vw; */
+    font-size: 1.2rem;
+}
+#footer > #informations button:hover{
+    text-decoration: underline solid white;
+}
+#footer > #informations button:active{
+    opacity: 0.2;
+}
+
+#footer > span{
+    text-align: center;
+    font-size: 1.1rem;
+}
+#footer > span > b{
+    color: rgb(73, 149, 255);
+    cursor: pointer;
+    text-decoration: underline solid transparent;
+    text-underline-offset: 2px;
+    transition: all 0.2s linear;
+}
+
+#footer > span > b:hover{
+    text-decoration: underline solid rgb(73, 149, 255);
+}

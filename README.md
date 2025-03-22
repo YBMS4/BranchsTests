@@ -4,7 +4,7 @@ Je vais utiliser ce repository pour tester les branches et leur fonctionnement s
 
 ## Commandes
 
-1) Les Commandes Initiaux:
+1) **Les Commandes Initiaux:**
  - Commande pour cloner
  ```sh
      git clone <Lien du repos distant>
